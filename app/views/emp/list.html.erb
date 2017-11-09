@@ -1,0 +1,34 @@
+<h1>Employees List</h1>
+
+<body>
+
+<table border="1">
+	<tr>
+		<th>Name</th>
+
+		<th>Age</th>
+
+		<th>Email</th>
+
+		<th>Phone Number</th>
+		<th></th>
+	</tr>
+
+	<% @emp1.each do |e| %>
+	<tr>
+		<td><%= e.name %></td>
+
+		<td><%= e.age %></td>
+
+		<td><%= e.email %></td>
+
+		<td><%= e.phno %></td>
+
+		<td> <%= link_to "show" , show_path(e) %> </td>
+	</tr>
+	
+	<% end -%>
+
+</table>
+
+</body>

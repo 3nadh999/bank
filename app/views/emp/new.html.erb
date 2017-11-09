@@ -1,0 +1,40 @@
+
+<h1> Enter Your Details </h1>
+
+<body>
+	
+		<%= form_for @emp , url:{action: 'create'} do |f| %>
+
+			<p>
+				<%= f.label "NAME" %>
+				<%= f.text_field :name %>
+
+			</p>
+
+
+			<p>
+				<%= f.label "AGE" %>
+				<%= f.number_field :age %>
+
+			</p>
+
+
+			<p>
+				<%= f.label "EMAIL" %>
+				<%= f.email_field :email %>
+
+			</p>
+
+
+			<p>
+				<%= f.label "PHONE NUMBER" %>
+				<%= f.number_field :phno %>
+
+			</p>
+
+			<p>
+				<%= f.submit %>
+			</p>
+
+		<% end %>
+</body> 
